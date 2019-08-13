@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomNavView">
+        <attr name="check_icon" format="reference" />
+        <attr name="uncheck_icon" format="reference" />
+        <attr name="check_color" format="color" />
+    </declare-styleable>
+</resources>
