@@ -73,3 +73,7 @@ use:
             app:check_icon="@mipmap/mine_in"
             app:uncheck_icon="@mipmap/mine_out" />
     </com.example.bottomnavview.BottomNavView>
+    
+    bottomNav.setupWithViewPager(vp);
+    
+    
