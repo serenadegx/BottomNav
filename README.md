@@ -23,49 +23,53 @@ Step 2. Add the dependency
 
 use:
 
-	 <android.support.v4.view.ViewPager
-		android:id="@+id/vp"
-		android:layout_width="match_parent"
-		android:layout_height="0dp"
-		android:layout_weight="1"/>
-	    <com.example.bottomnavview.BottomNavView
-		android:id="@+id/bottom_nav"
-		android:background="@android:color/white"
-		android:orientation="horizontal"
-		android:padding="10dp"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
-		<com.example.bottomnavview.BottomChildView
-		    android:id="@+id/main"
-		    android:checked="true"
-		    app:check_icon="@mipmap/main_in"
-		    app:uncheck_icon="@mipmap/main_out"
-		    android:textColor="@android:color/darker_gray"
-		    app:check_color="@color/colorBlue"
-		    android:textSize="14sp"
-		    android:text="主页"
-		    android:layout_weight="1"
-		    android:layout_width="0dp"
-		    android:layout_height="wrap_content" />
-		<com.example.bottomnavview.BottomChildView
-		    android:id="@+id/buy"
-		    app:check_color="@color/colorBlue"
-		    app:check_icon="@mipmap/buy_in"
-		    app:uncheck_icon="@mipmap/buy_out"
-		    android:textColor="@android:color/darker_gray"
-		    android:text="购车"
-		    android:layout_weight="1"
-		    android:layout_width="0dp"
-		    android:layout_height="wrap_content" />
-		<com.example.bottomnavview.BottomChildView
-		    android:id="@+id/mine"
-		    app:check_icon="@mipmap/mine_in"
-		    app:check_color="@color/colorBlue"
-		    app:uncheck_icon="@mipmap/mine_out"
-		    android:textColor="@android:color/darker_gray"
-		    android:layout_weight="1"
-		    android:text="我的"
-		    android:textSize="14sp"
-		    android:layout_width="0dp"
-		    android:layout_height="wrap_content" />
-	    </com.example.bottomnavview.BottomNavView>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.example.bottomnavview.BottomNavView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.example.bottomnavview.BottomChildView
+            android:id="@+id/main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="主页"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            app:check_color="@color/colorBlue"
+            app:check_icon="@mipmap/main_in"
+            app:uncheck_icon="@mipmap/main_out" />
+
+        <com.example.bottomnavview.BottomChildView
+            android:id="@+id/buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="购车"
+            android:textColor="@android:color/darker_gray"
+            app:check_color="@color/colorBlue"
+            app:check_icon="@mipmap/buy_in"
+            app:uncheck_icon="@mipmap/buy_out" />
+
+        <com.example.bottomnavview.BottomChildView
+            android:id="@+id/mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="我的"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            app:check_color="@color/colorBlue"
+            app:check_icon="@mipmap/mine_in"
+            app:uncheck_icon="@mipmap/mine_out" />
+    </com.example.bottomnavview.BottomNavView>
